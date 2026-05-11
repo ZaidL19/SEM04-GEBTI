@@ -1,12 +1,113 @@
-<Body>
-    <title>
-        Mi sitio web 
-    </title>
-    <h1>
-        Bienvenido a mi sitio web
-    </h1>
-    <p>
-        Este es un párrafo de ejemplo en mi sitio web.
-        Prueba practica GEPTI
-    </p>
-</Body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Dental | Sonrisas que Inspiran</title>
+    <!-- SEO y Fuentes -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <nav class="container">
+            <div class="logo">Dental<span>Care</span></div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto" class="btn-nav">Agendar Cita</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content container">
+            <h1>Tu sonrisa merece <br><span>el mejor cuidado</span></h1>
+            <p>Especialistas en odontología avanzada y estética dental en un ambiente diseñado para tu comodidad.</p>
+            <div class="hero-btns">
+                <a href="https://wa.me/tu-numero" class="btn-primary">Reserva por WhatsApp</a>
+                <a href="#servicios" class="btn-secondary">Ver servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ventajas Rápidas -->
+    <section class="features container">
+        <div class="feature-card">
+            <h3>Tecnología Avanzada</h3>
+            <p>Diagnósticos precisos con equipos de última generación.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Atención Personalizada</h3>
+            <p>Planes de tratamiento adaptados a cada paciente.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Emergencias 24/7</h3>
+            <p>Atención inmediata para dolores o accidentes dentales.</p>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="services container">
+        <h2 class="section-title">Nuestras Especialidades</h2>
+        <div class="services-grid">
+            <article class="service-item">
+                <img src="img/estetica.jpg" alt="Estética Dental">
+                <h3>Estética Dental</h3>
+                <p>Blanqueamiento, carillas y diseño de sonrisa.</p>
+            </article>
+            <article class="service-item">
+                <img src="img/ortodoncia.jpg" alt="Ortodoncia">
+                <h3>Ortodoncia</h3>
+                <p>Brackets tradicionales e invisibles (Invisalign).</p>
+            </article>
+            <article class="service-item">
+                <img src="img/implantes.jpg" alt="Implantes">
+                <h3>Implantes</h3>
+                <p>Recupera la funcionalidad y estética de tu dentadura.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Testimonios / Social Proof -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Lo que dicen nuestros pacientes</h2>
+            <div class="testimonial-box">
+                <p>"Excelente atención, el proceso de mis brackets fue impecable y sin dolor. ¡Recomendados!"</p>
+                <span>- María García</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto / CTA Final -->
+    <section id="contacto" class="cta-final container">
+        <div class="cta-info">
+            <h2>¿Listo para lucir tu mejor sonrisa?</h2>
+            <p>Ubícanos en: Av. Principal 123, Edificio Salud.</p>
+            <p>Horario: Lunes a Sábado 9:00 AM - 8:00 PM</p>
+        </div>
+        <form id="appointment-form">
+            <input type="text" placeholder="Nombre completo" required>
+            <input type="tel" placeholder="Tu celular" required>
+            <select>
+                <option>Selecciona un servicio</option>
+                <option>Limpieza Dental</option>
+                <option>Consulta General</option>
+                <option>Ortodoncia</option>
+            </select>
+            <button type="submit" class="btn-primary">Enviar Solicitud</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 DentalCare. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

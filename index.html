@@ -3,21 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clínica Dental | Sonrisas que Inspiran</title>
+    <title>Clínica Vibal | Sonrisas que Inspiran</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
     <!-- Header / Navbar -->
     <header>
         <nav class="container">
-            <div class="logo">Dental<span>Care</span></div>
+            <div class="logo">
+                <img src="img/logoDentalVibal.png" alt="Logo Dental Vibal">
+
+                <div class="logo-text">
+                    <span>Dental</span> Vibal
+                </div>
+            </div>
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
                 <li><a href="#contacto" class="btn-nav">Agendar Cita</a></li>
+                <li><a href="https://facebook.com/dental.vibal" target="_blank" class="facebook-icon"> <i class="fa-brands fa-facebook-f"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -25,8 +33,12 @@
     <!-- Hero Section -->
     <section id="inicio" class="hero">
         <div class="hero-content container">
-            <h1>Tu sonrisa merece <br><span>el mejor cuidado</span></h1>
-            <p>Especialistas en odontología avanzada y estética dental en un ambiente diseñado para tu comodidad.</p>
+            <h1>Tu sonrisa merece <br><span>un cuidado excepcional</span></h1>
+            <p>
+                Dra. Claudia Vivar Balcázar, especialista en estética dental,
+                ortodoncia y tratamientos modernos para cuidar tu sonrisa
+                con tecnología y confianza.
+            </p>
             <div class="hero-btns">
                 <a href="https://wa.me/51943992611" class="btn-primary">Reserva por WhatsApp</a>
                 <a href="#servicios" class="btn-secondary">Ver servicios</a>
@@ -53,33 +65,72 @@
     <!-- Servicios -->
     <section id="servicios" class="services container">
         <h2 class="section-title">Nuestras Especialidades</h2>
+
         <div class="services-grid">
+
             <article class="service-item">
-                <img src="img/estetica.jpeg" alt="Estética Dental">
-                <h3>Estética Dental</h3>
-                <p>Blanqueamiento, carillas y diseño de sonrisa.</p>
+                <img src="img/limpiezaDentalVibal.jpg" alt="Limpieza Dental">
+                <h3>Limpieza Dental</h3>
+                <p>Eliminamos placa y sarro para mantener una sonrisa sana y brillante.</p>
             </article>
+
             <article class="service-item">
-                <img src="img/implantes.jpeg" alt="Ortodoncia">
-                <h3>Ortodoncia</h3>
-                <p>Brackets tradicionales e invisibles (Invisalign).</p>
+                <img src="img/curacionDentalVibal.jpg" alt="Curación Dental">
+                <h3>Curación Dental</h3>
+                <p>Tratamientos efectivos para reparar dientes dañados por caries.</p>
             </article>
+
             <article class="service-item">
-                <img src="img/ortodoncia.jpeg" alt="Implantes">
-                <h3>Implantes</h3>
-                <p>Recupera la funcionalidad y estética de tu dentadura.</p>
+                <img src="img/endodonciaVibal.jpg" alt="Endodoncia">
+                <h3>Endodoncia</h3>
+                <p>Salvamos piezas dentales afectadas mediante tratamiento de conducto.</p>
             </article>
+
         </div>
     </section>
 
-    <!-- Testimonios / Social Proof -->
-    <section class="testimonials">
-        <div class="container">
-            <h2>Lo que dicen nuestros pacientes</h2>
-            <div class="testimonial-box">
-                <p>"Excelente atención, el proceso de mis brackets fue impecable y sin dolor. ¡Recomendados!"</p>
-                <span>- María García</span>
-            </div>
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonials container">
+        <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+
+        <div class="testimonials-grid">
+
+            <article class="testimonial-card">
+                <div class="testimonial-name">
+                    <h3>Sander Olortigue</h3>
+                    <span class="stars">★★★★★</span>
+                </div>
+
+                <p>
+                    “Excelente atención y mucha paciencia durante todo el tratamiento.
+                    La doctora fue muy amable y profesional.”
+                </p>
+            </article>
+
+            <article class="testimonial-card">
+                <div class="testimonial-name">
+                    <h3>Lector Bustamante</h3>
+                    <span class="stars">★★★★★</span>
+                </div>
+
+                <p>
+                    “Me encantó el resultado de mi limpieza dental.
+                    MIs dientes quedaron super blancos.”
+                </p>
+            </article>
+
+            <article class="testimonial-card">
+                <div class="testimonial-name">
+                    <h3>Samaria Jara</h3>
+                    <span class="stars">★★★★★</span>
+                </div>
+
+                <p>
+                    “La clínica tiene equipos modernos y una atención excelente.
+                    Recomiendo totalmente este lugar.”
+                </p>
+            </article>
+
         </div>
     </section>
 
@@ -87,7 +138,8 @@
     <section id="contacto" class="cta-final container">
         <div class="cta-info">
             <h2>¿Listo para lucir tu mejor sonrisa?</h2>
-            <p>Ubícanos en: Av. Principal 123, Edificio Salud.</p>
+            <p>Ubícanos en: Jr. Huambacho F 11D - Nuevo Chimbote.</p>
+            <p>Ref. Atras de Metro antes de llegar a 1° de Mayo.</p>
             <p>Horario: Lunes a Sábado 9:00 AM - 8:00 PM</p>
         </div>
         <form id="appointment-form">
@@ -105,7 +157,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 DentalCare. Todos los derechos reservados.</p>
+        <p>&copy; 2026 DentalViBal. Todos los derechos reservados.</p>
     </footer>
 
 </body>

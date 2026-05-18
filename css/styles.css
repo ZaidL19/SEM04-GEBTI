@@ -34,7 +34,9 @@ img {
 }
 
 /* --- Botones --- */
-.btn-primary, .btn-secondary, .btn-nav {
+.btn-primary,
+.btn-secondary,
+.btn-nav {
     display: inline-block;
     padding: 12px 28px;
     border-radius: 50px;
@@ -57,14 +59,14 @@ img {
 header {
     background: #efe2f0;
     padding: 20px 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
 header.scrolled {
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     background: #efe2f0;
 }
 
@@ -120,42 +122,30 @@ nav {
     font-weight: 500;
 }
 
-.facebook-icon {
-    background: #1877f2;
-    color: white !important;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s ease;
-}
-
-.facebook-icon:hover {
-    transform: scale(1.1);
-    background: #0d65d9;
-}
-
 /* --- Hero Section --- */
 .hero {
-    background:
-        linear-gradient(rgba(239,226,240,0.85), rgba(239,226,240,0.85)),
-        url('img/dental-bg.jpg') no-repeat center center/cover;
-    height: 80vh;
+    background: #efe2f0;
+    /* El color lila de fondo que ya tenías en tu gradiente */
+    min-height: 85vh;
     display: flex;
     align-items: center;
+    padding: 60px 0;
 }
 
-.hero-btns {
+/* Contenedor que alinea las dos columnas */
+.hero-container {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    /* Espacio de separación entre el texto y la imagen */
 }
 
-.hero-content {
-    text-align: center;
+/* Columna del Texto */
+.hero-text {
+    flex: 1;
+    text-align: left;
+    /* Cambiado a la izquierda para el estilo split */
 }
 
 .hero h1 {
@@ -171,8 +161,38 @@ nav {
 
 .hero p {
     font-size: 1.1rem;
-    margin-bottom: 30px;
-    max-width: 600px;
+    margin-bottom: 35px;
+    max-width: 550px;
+    /* Un poco más angosto para que rompa mejor el texto a la izquierda */
+    color: #4a4a4a;
+}
+
+/* Alineación de los botones a la izquierda */
+.hero-btns {
+    display: flex;
+    justify-content: flex-start;
+    /* Alineados a la izquierda */
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Columna de la Imagen */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    /* Tamaño máximo para que no se descontrole */
+    height: auto;
+    border-radius: 30px;
+    /* Bordes redondeados sutiles y modernos */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    /* Sombra suave para que flote en el fondo */
+    object-fit: cover;
 }
 
 /* --- Ventajas Rápidas --- */
@@ -192,7 +212,7 @@ nav {
     text-align: center;
     width: 300px;
 
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 
     transition: var(--transition);
 }
@@ -245,7 +265,7 @@ nav {
 }
 
 .service-item:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
 html {
@@ -270,17 +290,63 @@ html {
     gap: 15px;
 }
 
-#appointment-form input, #appointment-form select {
+#appointment-form input,
+#appointment-form select {
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 8px;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    /* Un color gris claro de fondo, cámbialo a tu gusto */
+    padding: 20px 10px;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* Alinea el texto arriba y las redes abajo */
+    align-items: center;
+    /* Centra todo horizontalmente */
+    gap: 15px;
+    /* Espacio entre el texto y las redes */
+    text-align: center;
+}
+
+.footer-content p {
+    margin: 0;
+    color: #000000;
+    font-size: 14px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    /* Espacio entre cada red social */
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+/* Efecto cuando pasas el mouse por encima */
+.social-icon:hover {
+    color: #0051bb;
 }
 
 /* --- RESPONSIVE (Media Queries) --- */
 
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* Aquí podrías implementar un menú hamburguesa */
+        display: none;
+        /* Aquí podrías implementar un menú hamburguesa */
     }
 
     .hero h1 {
@@ -292,12 +358,26 @@ html {
         text-align: center;
     }
 
-    .hero-content {
+    .hero-container {
+        flex-direction: column-reverse; /* Pone el texto arriba y la imagen abajo en celulares */
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero-text {
         text-align: center;
     }
 
     .hero p {
-        margin: 0 auto 30px;
+        margin: 0 auto 30px auto; /* Centra el párrafo en pantallas chicas */
+    }
+
+    .hero-btns {
+        justify-content: center; /* Centra los botones en el celular */
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem; /* Achica un toque el título en pantallas móviles */
     }
 }
 
@@ -318,12 +398,12 @@ html {
     padding: 30px;
     border-radius: 20px;
     transition: 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .testimonial-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial-name {
@@ -363,7 +443,7 @@ html {
     padding: 40px 20px;
     border-radius: 20px;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .stat-box h2 {

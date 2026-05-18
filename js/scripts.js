@@ -1,5 +1,4 @@
 history
-var nombre = "Johan Lopez"
 
 const header = document.querySelector("header");
 

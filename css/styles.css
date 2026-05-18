@@ -137,8 +137,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 50px;
-    /* Espacio de separación entre el texto y la imagen */
+    gap: 50px;     /* Espacio de separación entre el texto y la imagen */
+
 }
 
 /* Columna del Texto */
